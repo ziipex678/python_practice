@@ -1,0 +1,11 @@
+#palindrome number identify
+num1 = int(input("enter first number"))
+num2 = int(input("enter second number"))
+num3 = int(input("enter third number"))
+num = [num1, num2, num3]
+x = num.copy()
+x.reverse()
+if num == x:
+    print("this is a palindrome")
+else:
+    print("this is not a palindrome")
