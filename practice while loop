@@ -1,0 +1,24 @@
+fardin = 1
+fardin2 = []
+while fardin <= 40:
+    if fardin % 4 == 0:
+        fardin += 1
+        print("skiped")
+        continue
+    elif fardin %3 == 0 and fardin % 5 != 0:
+        print("bonus",fardin)
+    elif fardin == 25:
+        break
+    else:
+        print("add",fardin)
+    fardin2.append(fardin)
+    fardin += 1
+print("total steps",fardin2)
+print(type(fardin2))
+
+
+
+
+
+
+
