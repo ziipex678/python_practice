@@ -1,3 +1,4 @@
+#just practice
 fardin = 1
 fardin2 = []
 while fardin <= 40:
@@ -15,6 +16,33 @@ while fardin <= 40:
     fardin += 1
 print("total steps",fardin2)
 print(type(fardin2))
+# new 
+#password checker
+password = 1234
+write = []
+wrong = []
+attempt = 0
+while True:
+    user = int(input("write password: "))
+    if password == user:
+        print("password is correct")
+        write.append(user)
+        break
+    else:
+        print("wrong password")
+        attempt += 1
+        wrong.append(user)
+    if attempt == 5:
+        print("too many attempts")
+        break
+
+print(len(write) , "your total write attempt")
+print(len(wrong),"your total wrong attempt")
+
+
+
+
+
 
 
 
