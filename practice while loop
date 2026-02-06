@@ -38,6 +38,29 @@ while True:
 
 print(len(write) , "your total write attempt")
 print(len(wrong),"your total wrong attempt")
+#anather pass checker but this time with gmail
+gmial = "admin"
+password = "1234"
+maxattempts = 7
+attempts = 0
+while True:
+    user = input("enter the gmail: ")
+    passwroduser =input("enter the password: ")
+    if user == gmial and passwroduser == password:
+        print("login successful")
+        break
+    else:
+        attempts += 1
+        print(attempts, "attempt", "", "login failed")
+    if attempts == maxattempts:
+            print("maximum attempts reached")
+            break
+
+
+
+
+
+
 
 
 
