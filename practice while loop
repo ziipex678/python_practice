@@ -35,6 +35,33 @@ while True:
     if attempt == 5:
         print("too many attempts")
         break
+#Calculator only (+ - * /)
+symbol = ["+","-","*","/"]
+value = 0
+while True:
+    user1stnumber = int(input("enter a number:"))
+    usersymbol = input("enter symbol:")
+    user2ndnumber = int(input("enter another number:"))
+    if usersymbol == symbol[0]:
+        print(user1stnumber + user2ndnumber)
+        break
+    if usersymbol == symbol[1]:
+        print(user1stnumber - user2ndnumber)
+        break
+    if usersymbol == symbol[2]:
+        print(user1stnumber * user2ndnumber)
+        break
+    if usersymbol == symbol[3]:
+        print(user1stnumber / user2ndnumber )
+        break
+    else:
+        print("wrong input")
+        value += 1
+    if value > 0:
+        continue
+
+
+
 
 print(len(write) , "your total write attempt")
 print(len(wrong),"your total wrong attempt")
