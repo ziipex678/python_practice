@@ -1,0 +1,10 @@
+#Average of three numbers
+def fardin(a,b,c):
+    theirsum = a+b+c
+    average = theirsum/3
+    return average
+user = int(input("inter 1st a number: "))
+user2 = int(input("inter 2nd a number: "))
+user3 = int(input("inter last number: "))
+
+print(fardin(user,user2,user3))
